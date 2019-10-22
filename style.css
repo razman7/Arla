@@ -54,10 +54,14 @@ p{
   height: 100%;
   background-color: #F0F0F0;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .content nav{
   background-color: #fff;
   height: 65px;
+  grid-column: 1/ span 3;
+  grid-row: 1;
 }
 
 #menu{
@@ -132,6 +136,14 @@ p{
   transform: rotate(-45deg) translate(0, -1px);
 }
 /*Hamburger Menu and Bar*//*Source: https://codepen.io/shieldsma91/pen/zLpbLX*/
+
+#logo{
+  max-width: 70px;
+  grid-row: 1;
+  grid-column: 2;
+  z-index: 3;
+  justify-self: center;
+}
 
 @media only screen and (min-width: 768px) {
 
