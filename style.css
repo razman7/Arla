@@ -1,0 +1,64 @@
+/*Fonts*/
+@font-face {
+    font-family: "condensed";
+    src: url(ArlaCondBold.otf);
+}
+@font-face {
+    font-family: "regular";
+    src: url(ArlaIF_W_Rg.ttf);
+}
+@font-face {
+    font-family: "bold";
+    src: url(ArlaIF_W_Bd.ttf);
+}
+@font-face {
+    font-family: "italic";
+    src: url(ArlaIF_W_It.ttf)
+}
+@font-face {
+    font-family: "light";
+    src: url(ArlaIF_W_Lt.ttf);
+}
+/*Fonts*/
+
+body, html{
+    background-color: #F0F0F0;
+    margin: 0;
+}
+p {
+    font-family: "regular";
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+/*Side Navigation*/
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1E471f;
+  display: block;
+  font-family: "regular";
+}
+#catnav{
+
+}
+#statnav{
+
+}
+#helpnav{
+
+}
+/*Side Navigation*/
