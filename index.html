@@ -7,22 +7,36 @@
     <title>Arlagården</title>
   </head>
   <body>
+  <nav class="sidenav">
+      <a href="#" id="catnav"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+      <a href="#" id="statnav"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+      <a href="#" id="helpnav"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+  </nav>
 
   <div class="container">
     <div class="content">
-    <img src="media/logo.svg" alt="arla logo" id="logo">
-    <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-          <ul id="menu">
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Statistics</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
+      <nav role="navigation" id="topbar"> <!-- change to div and change list to nav!-->
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            <ul id="menu">
+              <li><a href="#"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a></li>
+              <li><a href="#"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a></li>
+              <li><a href="#"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a></li>
+            </ul>
+          </div>
+          <div id="smallgrid">
+            <a href="index.html" class="logolink">
+              <img src="media/logo.svg" alt="arla logo" id="logo">
+            </a>
+            <div id="rightnav">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+            </div>
+          </div>
       </nav>
     </div>
   </div>
