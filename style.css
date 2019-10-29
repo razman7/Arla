@@ -43,7 +43,7 @@ h2{
     font-family: "bold";
     font-weight: 400;
     font-size: 1.7em;
-    color: #333;
+    color: #006C3A;
     margin-bottom: 0;
 }
 .maintitles{
@@ -445,7 +445,15 @@ form.submitted input:invalid{
     box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
 }
 
-
+/*//////////////// SMALL STATS PAGE ////////////////////*/
+.ssimg{
+  padding: 20px;
+  margin-top: 20px;
+}
+.sshead{
+  padding: 10px;
+}
+/*//////////////// SMALL STATS PAGE ////////////////////*/
 
 
 

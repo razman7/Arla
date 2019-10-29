@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Arlagården</title>
+  </head>
+  <body>
+  <!-- DESKTOP VERSION !-->
+  <div class="deskwrapper">
+    <div class="stickytop"></div>
+    <nav class="sidenav"> <!-- desktop menu !-->
+      <div>
+      <a href="index.html" id="home"><img src="media/logo.svg" alt="arla logo"></a>
+      <a href="index.html" id="catnav"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+      <a href="stats.html" id="statnav"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+      <a href="help.html" id="helpnav"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+      </div>
+    </nav>
+
+    <div class="deskcontent" id="whiteback">
+      <img src="media/logo.svg" alt="back" class="backbutt">
+      <div class="search"><p>Search</p><img src="media/logo.svg" alt="search"></div>
+      <h1 class="deskmaintitles" id="surveytitle">Imported Feed</h1>
+      <p class="deskmainparagraphs" id="surveypara">In this section you will be able to fill in all
+        the information necessary to calculate the CO2 produced when you import the food for you animals. <br>
+        Click the field you want to fill or<b> press Enter</b> to switch between them!
+      </p>
+      <form class="contentflex" id="surveyflex" action="smallstats.html">
+
+        <div>
+          <ol for="numberfloat" start="1">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress()"></ol>
+        </div>
+
+        <div>
+          <ol for="numberfloat" start="2">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress2()"></ol>
+        </div>
+
+        <div>
+          <ol for="numberfloat" start="3">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress3()"></ol>
+        </div>
+
+        <div>
+          <ol for="numberfloat" start="4">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress4()"></ol>
+        </div>
+
+
+      <input type="submit" class="button" value="SUBMIT FORM" id="submitbutt">
+      </form>
+
+      <div class="progress" id="field1"></div>
+    </div>
+  </div>
+
+  <!-- MOBILE VERSION !-->
+  <div class="container"> <!-- mobile menu !-->
+    <div class="content">
+      <div role="navigation" id="topbar">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            <nav id="menu">
+              <a href="index.html"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+              <a href="stats.html"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+              <a href="help.html"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+            </nav>
+          </div>
+          <div id="smallgrid">
+            <a href="index.html" class="logolink">
+              <img src="media/logo.svg" alt="arla logo" id="logo">
+            </a>
+            <div id="rightnav">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="contentscroll" >
+      <div class="contentflex" id="surveyflexm" action="smallstats.html" >
+        <h2 class="maintitles">You've completed the <span style="color: #FF7E05">Imported Feeds</span> section</h2>
+        <img src="media/logo.svg" alt="bar graph" class="ssimg">
+        <h2 class="sshead">FINAL RESULT:</h2>
+
+
+      </div>
+
+      <div id="onlyheresothatitscrollsnormally"></div>
+    </div>
+
+  </div>
+
+  </body>
+</html>
