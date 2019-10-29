@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Arlagården</title>
   </head>
   <body>
@@ -24,20 +25,70 @@
       <div class="search"><p>Search</p><img src="media/logo.svg" alt="search"></div>
       <h1 class="deskmaintitles" id="surveytitle">Imported Feed</h1>
       <p class="deskmainparagraphs" id="surveypara">In this section you will be able to fill in all
-        the information necessary to calculate the CO2 produced when you import the food for you animals.
+        the information necessary to calculate the CO2 produced when you import the food for you animals. <br>
+        Click the field you want to fill or<b> press Enter</b> to switch between them!
       </p>
-      <form class="contentflex" id="surveyflex">
+      <form class="contentflex" id="surveyflex" action="smallstats.html">
 
         <div>
-          <label for="numberfloat"><h2>1. How many kg of milk does one of your cows produce yearly?</h2></label>
-          <input type="number" id="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+">
+          <ol for="numberfloat" start="1">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress()"></ol>
         </div>
-        <input type="submit" class="button" value="NEXT QUESTION">
 
+        <div>
+          <ol for="numberfloat" start="2">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress2()"></ol>
+        </div>
+
+        <div>
+          <ol for="numberfloat" start="3">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress3()"></ol>
+        </div>
+
+        <div>
+          <ol for="numberfloat" start="4">
+            <li>How many kg of milk does one of your cows produce yearly?
+              <div class="toolmark">
+                <img src="media/logo.svg" alt="help">
+                <span class="tooltext">
+                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
+                </span>
+              </div>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress4()"></ol>
+        </div>
+
+
+      <input type="submit" class="button" value="SUBMIT FORM" id="submitbutt">
       </form>
+
+      <div class="progress" id="field1"></div>
     </div>
   </div>
-  <!-- DESKTOP VERSION !-->
 
   <!-- MOBILE VERSION !-->
   <div class="container"> <!-- mobile menu !-->
@@ -67,50 +118,85 @@
       </div>
     </div>
 
-    <div class="contentscroll">
-      <h1 class="maintitles">Arlagården Plus Survey</h1>
-      <p class="mainparagraphs">Hey Henry! Welcome to the Arlagården Plus Survey, where you can see your current and past carbon footprint.
-        This survey is divided in four categories, each one regarding a specific topic. Start from the top, or choose the section you would like to fill-in!
-        Each category has a progress bar, which shows how far you got last time you filled the form.
+    <div class="contentscroll" >
+      <h1 class="maintitles">Imported Feed</h1>
+      <p class="mainparagraphs" id="surveypara">In this section you will be able to fill in all
+        the information necessary to calculate the CO2 produced when you import the food for you animals.
       </p>
 
-      <div class="lines">
-        <hr class="line1"> <p class="linetitle">CATEGORIES</p> <hr class="line2">
-      </div>
+      <form class="contentflex" id="surveyflexm" action="smallstats.html" >
 
-      <div class="wrapper">
-        <div class="category">
-          <a href="survey.html"><img src="media/feed.svg" alt=""></a>
-          <a href="survey.html" class="butt"> START </a>
-        </div>
-      </div>
+        <div>
+          <ol for="numberfloat" start="1">
+            <li>How many kg of milk does one of your cows produce yearly?
 
-      <div class="wrapper">
-        <div class="category">
-          <a href="survey.html"><img src="media/feed.svg" alt="">
-          <a href="survey.html" class="butt"> START </a>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress()"></ol>
         </div>
-      </div>
 
-      <div class="wrapper">
-        <div class="category">
-          <a href="survey.html"><img src="media/feed.svg" alt="">
-          <a href="survey.html" class="butt"> START </a>
-        </div>
-      </div>
+        <div>
+          <ol for="numberfloat" start="2">
+            <li>How many kg of milk does one of your cows produce yearly?
 
-      <div class="wrapper">
-        <div class="category">
-          <a href="survey.html"><img src="media/feed.svg" alt="">
-          <a href="survey.html" class="butt"> START </a>
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress2()"></ol>
         </div>
-      </div>
+
+        <div>
+          <ol for="numberfloat" start="3">
+            <li>How many kg of milk does one of your cows produce yearly?
+
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress3()"></ol>
+        </div>
+
+        <div>
+          <ol for="numberfloat" start="4">
+            <li>How many kg of milk does one of your cows produce yearly?
+
+            </li>
+          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress4()"></ol>
+        </div>
+
+
+      <input type="submit" class="button" value="SUBMIT FORM" id="submitbutt">
+      </form>
+
       <div id="onlyheresothatitscrollsnormally"></div>
     </div>
 
   </div>
-  <!-- MOBILE VERSION !-->
-
 
   </body>
+
+  <script>
+    $('form').on('focus', 'input[type=number]', function (e) {                    // Source: https://stackoverflow.com/questions/9712295/disable-scrolling-on-input-type-number
+      $(this).on('wheel.disableScroll', function (e) {
+        e.preventDefault()
+      })
+    })
+    $('form').on('blur', 'input[type=number]', function (e) {
+      $(this).off('wheel.disableScroll')
+    })
+
+    document.getElementById("submitbutt").addEventListener("submit", function(){  // Source: https://stackoverflow.com/questions/41619497/how-to-make-pseudo-class-invalid-apply-to-an-input-after-submitting-a-form/41619669
+	  this.className="submitted";
+    });
+
+
+    function showProgress(){
+      document.getElementById('field1').style.backgroundImage = 'url(media/logo.svg)';
+    }
+    function showProgress2(){
+      document.getElementById('field1').style.backgroundImage = 'url(media/feed.svg)';
+    }
+    function showProgress3(){
+      document.getElementById('field1').style.backgroundImage = 'url(media/logo.svg)';
+    }
+    function showProgress4(){
+      document.getElementById('field1').style.backgroundImage = 'url(media/feed.svg)';
+    }
+
+
+  </script>
 </html>

@@ -38,7 +38,9 @@ h1{
 }
 h2{
     font-family: "bold";
+    font-weight: 400;
     font-size: 1.7em;
+    color: #333;
     margin-bottom: 0;
 }
 .maintitles{
@@ -61,6 +63,7 @@ h2{
   top: 0;
   overflow: hidden;
   pointer-events: none;
+
 }
 .content{
   width: 100%;
@@ -277,6 +280,173 @@ h2{
   z-index: -1000;
 }
 
+
+
+/*//////////////// SURVEY PAGE ////////////////////*/
+
+
+#surveypara{
+  text-align: center;
+}
+
+.backbutt{
+  visibility: hidden;
+}
+
+#surveytitle{
+  margin: 0;
+}
+
+#surveyflexm{
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  padding-top: 20px;
+  background-color: #fff;
+  box-shadow: 4px 4px 3px #b0b0b0;
+  overflow: hidden;
+}
+
+/*Form Styling*/ /*Source: https://css-tricks.com/form-validation-part-1-constraint-validation-html/ */
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.pattern {
+    color: #808080;
+    font-size: 0.8em;
+}
+
+.supports-color .color,
+.supports-date .date,
+.supports-time .time,
+.supports-month .mont {
+    display: none;
+}
+
+input, select {
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+}
+.numberfloat{
+  width: 70%;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: none;
+  padding: 10px;
+}
+ol{
+  list-style-position: outside;
+
+}
+li {
+    font-family: "bold";
+    font-weight: 400;
+    font-size: 16pt;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2em;
+}
+
+.toolmark{
+  width: 50px;
+  padding-left: 15px;
+  position:absolute;
+  display: inline-block;
+  visibility: hidden;
+}
+.tooltext{
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  font-size: 14pt;
+  line-height: 17pt;
+  font-family: "Regular";
+
+  width: 200px;
+  background-color: #ebebec;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: left;
+
+}
+.toolmark:hover .tooltext {
+  visibility: visible;
+}
+
+input:not(:placeholder-shown):invalid{ /* Adapted from: https://www.the-art-of-web.com/html/html5-form-validation/#cssvalid */
+  box-shadow: none;
+  border: 2px solid red;
+  background-image: url(media/logo.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 50px;
+}
+input:required:valid {
+  border: 2px solid #006C3A;
+  background-image: url(media/logo.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { /* Hides number spinner in form on chrome*/ /* Source: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield; /* Hides on Firefox */
+}
+form.submitted input:invalid{
+  border: 2px solid red;
+  background-image: url(media/logo.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.button {
+    background-color: #006C3A;
+    color: #ffffff;
+    width: auto;
+    box-shadow: 2px 3px 3px #b0b0b0;
+    cursor: pointer;
+    padding: 10px 40px 10px 40px;
+    display: inline-block;
+    border: none;
+    font-family: "bold";
+    font-size: 1em;
+    text-decoration: none;
+    align-self: flex-end;
+    margin: 20px;
+    margin-top: 0;
+    margin-right: 15px;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    background-color: #00351C;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
 @media only screen and (min-width: 768px) {
 
 body,html{
@@ -488,6 +658,7 @@ body,html{
   justify-self: left;
   padding-left: 20px;
   max-width: 50px;
+  visibility: visible;
 }
 
 #surveytitle{
@@ -496,9 +667,11 @@ body,html{
 
 #surveyflex{
   grid-row: 4;
-  grid-column: 1/ span 4;
+  grid-column: 1/ span 3;
   flex-direction: column;
   justify-content: center;
+  width: 80%;
+  max-width: 600px;
 }
 
 /*Form Styling*/ /*Source: https://css-tricks.com/form-validation-part-1-constraint-validation-html/ */
@@ -524,13 +697,86 @@ input, select {
     font-size: 1em;
     margin-bottom: 1em;
     padding: 0.25em 0.5em;
-    width: 400px;
+}
+.numberfloat{
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: none;
+  padding: 10px;
+}
+ol{
+  list-style-position: outside;
+
+}
+li {
+    font-family: "bold";
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2em;
 }
 
-[type="checkbox"],
-[type="radio"] {
-    margin-bottom: 0.5em;
-    width: auto;
+.toolmark{
+  width: 50px;
+  padding-left: 15px;
+  position:absolute;
+  display: inline-block;
+  visibility: visible;
+}
+.tooltext{
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  font-size: 14pt;
+  line-height: 17pt;
+  font-family: "Regular";
+
+  width: 200px;
+  background-color: #ebebec;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: left;
+
+}
+.toolmark:hover .tooltext {
+  visibility: visible;
+}
+
+input:not(:placeholder-shown):invalid{ /* Adapted from: https://www.the-art-of-web.com/html/html5-form-validation/#cssvalid */
+  box-shadow: none;
+  border: 2px solid red;
+  background-image: url(media/logo.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 50px;
+}
+input:required:valid {
+  border: 2px solid #006C3A;
+  background-image: url(media/logo.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { /* Hides number spinner in form on chrome*/ /* Source: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield; /* Hides on Firefox */
+}
+form.submitted input:invalid{
+  border: 2px solid red;
+  background-image: url(media/logo.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 50px;
 }
 
 .button {
@@ -545,6 +791,10 @@ input, select {
     font-family: "bold";
     font-size: 1em;
     text-decoration: none;
+    align-self: flex-end;
+    margin: 20px;
+    margin-top: 0;
+    margin-right: 15px;
 }
 
 .button:active,
@@ -558,4 +808,25 @@ input, select {
 .button:active {
     box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
 }
+
+.progress{
+  visibility: hidden;
+}
 /*Form Styling*/ /*Source: https://css-tricks.com/form-validation-part-1-constraint-validation-html/ */
+
+
+@media only screen and (min-width: 1065px) {
+  .progress{
+    visibility: visible;
+    grid-row: 4;
+    grid-column: 4;
+    width: 70%;
+    min-width: 225px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: red;
+    justify-self: left;
+    height: 400px;
+    align-self: center;
+  }
+}
