@@ -20,73 +20,58 @@
       </div>
     </nav>
 
-    <div class="deskcontent" id="whiteback">
-      <img src="media/logo.svg" alt="back" class="backbutt">
-      <div class="search"><p>Search</p><img src="media/logo.svg" alt="search"></div>
-      <h1 class="deskmaintitles" id="surveytitle">Imported Feed</h1>
-      <p class="deskmainparagraphs" id="surveypara">In this section you will be able to fill in all
-        the information necessary to calculate the CO2 produced when you import the food for you animals. <br>
-        Click the field you want to fill or<b> press Enter</b> to switch between them!
-      </p>
-      <form class="contentflex" id="surveyflex" action="smallstats.html">
+    <div class="deskcontent" id="sswhiteback">
+      <h1 class="deskmaintitles" id="surveytitle">You've completed the <span>Imported Feeds</span> section</h1>
+      <img src="media/logo.svg" alt="bar graph" class="ssimg">
 
-        <div>
-          <ol for="numberfloat" start="1">
-            <li>How many kg of milk does one of your cows produce yearly?
-              <div class="toolmark">
-                <img src="media/logo.svg" alt="help">
-                <span class="tooltext">
-                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
-                </span>
-              </div>
-            </li>
-          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress()"></ol>
+      <div id="finals">
+        <h2 class="sshead">FINAL RESULT: <span>0,3596 C/kg milk</span></h2>
+        <h2 class="sshead2">LAST YEAR RESULT: <span style="color: #006C3A;">0,3996 C/kg milk</span></h2>
+        <p>Congratulations, you did better than last year. You have reduced 0.0400 C/KG milk.
+        Here are some statististics of your imputs compared to last year. Seems like you have improved in every aspect from last year.  Good job!
+        </p>
+      </div>
+
+      <div class="ssbuttgrid">
+        <a href="index.html" class="ssbutt">BACK TO CATEGORIES</a>
+        <a href="stats.html" class="ssbutt" id="ssb2">NEXT CATEGORY</a>
+      </div>
+
+      <div class="lines">
+        <hr class="line1"> <p class="linetitle">INPUT STATS</p> <hr class="line2">
+      </div>
+
+      <div class="contentflex">
+
+        <div class="ssstatgrid">
+          <h2 class="sshead">MILK</h2>
+          <img src="media/logo.svg" alt="milk" class="sssgi">
+          <div class="sssflex">
+            <img src="media/feed.svg" alt="milk">
+            <h2 class="sshead2">THIS YEAR RESULT: 0,3456 C/kg milk</h2>
+            <h2 class="sshead2" style="opacity: .5;">LAST YEAR RESULT: 0,3121 C/kg milk</h2>
+          </div>
+        </div>
+        <div class="ssstatgrid">
+          <h2 class="sshead">COWS</h2>
+          <img src="media/logo.svg" alt="milk" class="sssgi">
+          <div class="sssflex">
+            <img src="media/feed.svg" alt="milk">
+            <h2 class="sshead2">THIS YEAR RESULT: 0,2987 C/kg milk</h2>
+            <h2 class="sshead2" style="opacity: .5;">LAST YEAR RESULT: 0,2279 C/kg milk</h2>
+          </div>
+        </div>
+        <div class="ssstatgrid">
+          <h2 class="sshead">ENERGY</h2>
+          <img src="media/logo.svg" alt="milk" class="sssgi">
+          <div class="sssflex">
+            <img src="media/feed.svg" alt="milk">
+            <h2 class="sshead2">THIS YEAR RESULT: 0,4824 C/kg milk</h2>
+            <h2 class="sshead2" style="opacity: .5;">LAST YEAR RESULT: 0,3956 C/kg milk</h2>
+          </div>
         </div>
 
-        <div>
-          <ol for="numberfloat" start="2">
-            <li>How many kg of milk does one of your cows produce yearly?
-              <div class="toolmark">
-                <img src="media/logo.svg" alt="help">
-                <span class="tooltext">
-                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
-                </span>
-              </div>
-            </li>
-          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress2()"></ol>
         </div>
-
-        <div>
-          <ol for="numberfloat" start="3">
-            <li>How many kg of milk does one of your cows produce yearly?
-              <div class="toolmark">
-                <img src="media/logo.svg" alt="help">
-                <span class="tooltext">
-                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
-                </span>
-              </div>
-            </li>
-          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress3()"></ol>
-        </div>
-
-        <div>
-          <ol for="numberfloat" start="4">
-            <li>How many kg of milk does one of your cows produce yearly?
-              <div class="toolmark">
-                <img src="media/logo.svg" alt="help">
-                <span class="tooltext">
-                  Amount of milk produced by one of the cows on your farm. Data is <b>per year</b> and in <b>KG.</b>
-                </span>
-              </div>
-            </li>
-          <input type="number" class="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="Click to fill!" onBlur="showProgress4()"></ol>
-        </div>
-
-
-      <input type="submit" class="button" value="SUBMIT FORM" id="submitbutt">
-      </form>
-
-      <div class="progress" id="field1"></div>
     </div>
   </div>
 
@@ -119,15 +104,53 @@
     </div>
 
     <div class="contentscroll" >
-      <div class="contentflex" id="surveyflexm" action="smallstats.html" >
-        <h2 class="maintitles">You've completed the <span style="color: #FF7E05">Imported Feeds</span> section</h2>
+      <div class="contentflex" id="surveyflexm">
+        <h2 class="maintitles">You've completed the <span>Imported Feeds</span> section</h2>
         <img src="media/logo.svg" alt="bar graph" class="ssimg">
-        <h2 class="sshead">FINAL RESULT:</h2>
+        <h2 class="sshead">FINAL RESULT: <span>0,3596 C/kg milk</span></h2>
+        <h2 class="sshead2">LAST YEAR RESULT: <span style="color: #006C3A;">0,3996 C/kg milk</span></h2>
+        <p class="sspara">Congratulations, you did better than last year. You have reduced 0.0400 C/KG milk.
+Here are some statististics of your imputs compared to last year. Seems like you have improved in every aspect from last year.  Good job!
+        </p>
+        <div class="ssbuttgrid">
+          <a href="index.html" class="ssbutt">BACK TO CATEGORIES</a>
+          <a href="stats.html" class="ssbutt" id="ssb2">NEXT CATEGORY</a>
+        </div>
 
+        <div class="lines">
+          <hr class="line1"> <p class="linetitle">INPUT STATS</p> <hr class="line2">
+        </div>
 
+        <div class="ssstatgrid">
+          <h2 class="sshead">MILK</h2>
+          <img src="media/logo.svg" alt="milk" class="sssgi">
+          <div class="sssflex">
+            <img src="media/feed.svg" alt="milk">
+            <h2 class="sshead2">THIS YEAR RESULT: 0,3456 C/kg milk</h2>
+            <h2 class="sshead2" style="opacity: .5;">LAST YEAR RESULT: 0,3121 C/kg milk</h2>
+          </div>
+        </div>
+        <div class="ssstatgrid">
+          <h2 class="sshead">COWS</h2>
+          <img src="media/logo.svg" alt="milk" class="sssgi">
+          <div class="sssflex">
+            <img src="media/feed.svg" alt="milk">
+            <h2 class="sshead2">THIS YEAR RESULT: 0,2987 C/kg milk</h2>
+            <h2 class="sshead2" style="opacity: .5;">LAST YEAR RESULT: 0,2279 C/kg milk</h2>
+          </div>
+        </div>
+        <div class="ssstatgrid">
+          <h2 class="sshead">ENERGY</h2>
+          <img src="media/logo.svg" alt="milk" class="sssgi">
+          <div class="sssflex">
+            <img src="media/feed.svg" alt="milk">
+            <h2 class="sshead2">THIS YEAR RESULT: 0,4824 C/kg milk</h2>
+            <h2 class="sshead2" style="opacity: .5;">LAST YEAR RESULT: 0,3956 C/kg milk</h2>
+          </div>
+        </div>
+
+        <div id="onlyheresothatitscrollsnormally"></div>
       </div>
-
-      <div id="onlyheresothatitscrollsnormally"></div>
     </div>
 
   </div>

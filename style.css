@@ -452,6 +452,81 @@ form.submitted input:invalid{
 }
 .sshead{
   padding: 10px;
+  font-size: 16pt;
+  color: black;
+  text-align: center
+}
+h2 span{
+  color: #FF7E05;
+}
+.sshead2{
+  padding: 10px;
+  padding-top: 0;
+  font-size: 12pt;
+  color: black;
+  text-align: center
+}
+.sspara{
+  padding: 20px;
+  padding-top: 0;
+}
+.ssbuttgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.ssbutt{
+  cursor: pointer;
+  background-color: #EBEBEC;
+  width: 60%;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  border: none;
+  box-shadow: 2px 3px 3px #b0b0b0;
+  font-family: "bold";
+  font-size: 12pt;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  justify-self: center;
+}
+#ssb2{
+  color: #fff;
+  background-color: #006C3A;
+}
+
+.ssstatgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  margin-top: 40px;
+}
+.ssstatgrid .sshead{
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: right;
+  align-self: center;
+  margin: 0;
+  padding-right: 0;
+}
+.sssgi{
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: left;
+  width: 50px;
+  align-self: center;
+  padding: 10px;
+  padding-left: 0;
+}
+.sssflex{
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+.sssflex .sshead2{
+  padding: 0;
+  margin-top: 5px;
 }
 /*//////////////// SMALL STATS PAGE ////////////////////*/
 
@@ -460,6 +535,69 @@ form.submitted input:invalid{
 
 @media only screen and (min-width: 768px) {
 
+/*//////////////// SMALL STATS PAGE ////////////////////*/
+#sswhiteback{
+  margin: 50px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 4px 4px 3px #b0b0b0;/* for white background version */
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0 auto 250px auto auto 1fr;
+}
+#sswhiteback h1{
+  font-size: 2.531em;
+}
+#sswhiteback h1 span{
+  color: #FF7E05;
+}
+#sswhiteback .ssimg{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  width: 200px;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+#sswhiteback .contentflex{
+  flex-direction: row;
+  grid-row: 6;
+  justify-content: space-between;
+}
+#sswhiteback .contentflex .ssstatgrid{
+  margin: 30px;
+}
+#sswhiteback .ssbuttgrid{
+  grid-row: 4;
+  grid-column: 2 / span 2;
+  flex-direction: row;
+}
+#sswhiteback .lines{
+  grid-row: 5;
+  grid-column: 1 / span 4;
+  flex-direction: row;
+}
+
+#finals{
+  grid-row: 3;
+  grid-column: 2 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: right;
+  width: 80%;
+}
+#finals h2{
+  text-align: left;
+  padding-left: 0;
+  margin: 0
+}
+#finals p{
+  margin: 0;
+  width: 70%;
+}
+/*//////////////// SMALL STATS PAGE ////////////////////*/
 
 
 body,html{
