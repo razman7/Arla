@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Arlagården</title>
+  </head>
+  <body>
+  <!-- DESKTOP VERSION !-->
+  <div class="deskwrapper">
+    <div class="stickytop"></div>
+    <nav class="sidenav"> <!-- desktop menu !-->
+      <div>
+      <a href="index.html" id="home"><img src="media/logo.svg" alt="arla logo"></a>
+      <a href="index.html" id="catnav"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+      <a href="stats.html" id="statnav"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+      <a href="help.html" id="helpnav"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+      </div>
+    </nav>
+
+    <div class="deskcontent" id="whiteback">
+      <img src="media/logo.svg" alt="back" class="backbutt">
+      <div class="search"><p>Search</p><img src="media/logo.svg" alt="search"></div>
+      <h1 class="deskmaintitles" id="surveytitle">Imported Feed</h1>
+      <p class="deskmainparagraphs" id="surveypara">In this section you will be able to fill in all
+        the information necessary to calculate the CO2 produced when you import the food for you animals.
+      </p>
+      <form class="contentflex" id="surveyflex">
+
+        <div>
+          <label for="numberfloat"><h2>1. How many kg of milk does one of your cows produce yearly?</h2></label>
+          <input type="number" id="numberfloat" step="any" pattern="[-+]?[0-9]*[.,]?[0-9]+">
+        </div>
+        <input type="submit" class="button" value="NEXT QUESTION">
+
+      </form>
+    </div>
+  </div>
+  <!-- DESKTOP VERSION !-->
+
+  <!-- MOBILE VERSION !-->
+  <div class="container"> <!-- mobile menu !-->
+    <div class="content">
+      <div role="navigation" id="topbar">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            <nav id="menu">
+              <a href="index.html"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+              <a href="stats.html"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+              <a href="help.html"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+            </nav>
+          </div>
+          <div id="smallgrid">
+            <a href="index.html" class="logolink">
+              <img src="media/logo.svg" alt="arla logo" id="logo">
+            </a>
+            <div id="rightnav">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="contentscroll">
+      <h1 class="maintitles">Arlagården Plus Survey</h1>
+      <p class="mainparagraphs">Hey Henry! Welcome to the Arlagården Plus Survey, where you can see your current and past carbon footprint.
+        This survey is divided in four categories, each one regarding a specific topic. Start from the top, or choose the section you would like to fill-in!
+        Each category has a progress bar, which shows how far you got last time you filled the form.
+      </p>
+
+      <div class="lines">
+        <hr class="line1"> <p class="linetitle">CATEGORIES</p> <hr class="line2">
+      </div>
+
+      <div class="wrapper">
+        <div class="category">
+          <a href="survey.html"><img src="media/feed.svg" alt=""></a>
+          <a href="survey.html" class="butt"> START </a>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="category">
+          <a href="survey.html"><img src="media/feed.svg" alt="">
+          <a href="survey.html" class="butt"> START </a>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="category">
+          <a href="survey.html"><img src="media/feed.svg" alt="">
+          <a href="survey.html" class="butt"> START </a>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="category">
+          <a href="survey.html"><img src="media/feed.svg" alt="">
+          <a href="survey.html" class="butt"> START </a>
+        </div>
+      </div>
+      <div id="onlyheresothatitscrollsnormally"></div>
+    </div>
+
+  </div>
+  <!-- MOBILE VERSION !-->
+
+
+  </body>
+</html>

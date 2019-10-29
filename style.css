@@ -36,6 +36,11 @@ h1{
     color: #006C3A;
     font-size: 2.531em;
 }
+h2{
+    font-family: "bold";
+    font-size: 1.7em;
+    margin-bottom: 0;
+}
 .maintitles{
   text-align: center;
 }
@@ -308,7 +313,7 @@ body,html{
 }
 
 .deskmaintitles{
-  font-size: 5.3em;
+  font-size: 3.8em;
   align-self: center;
   margin-bottom: 0px;
   grid-column: 1/ span 4;
@@ -459,3 +464,98 @@ body,html{
   padding-top: 20px;
 }
 /*Side Navigation*/
+
+/*//////////////// SURVEY PAGE ////////////////////*/
+#whiteback{
+  margin: 50px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 4px 4px 3px #b0b0b0;/* for white background version */
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px auto auto 1fr;
+}
+
+#surveypara{
+  text-align: center;
+}
+
+.backbutt{
+  grid-row: 1;
+  grid-column: 1;
+  align-self: center;
+  justify-self: left;
+  padding-left: 20px;
+  max-width: 50px;
+}
+
+#surveytitle{
+  margin: 0;
+}
+
+#surveyflex{
+  grid-row: 4;
+  grid-column: 1/ span 4;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Form Styling*/ /*Source: https://css-tricks.com/form-validation-part-1-constraint-validation-html/ */
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.pattern {
+    color: #808080;
+    font-size: 0.8em;
+}
+
+.supports-color .color,
+.supports-date .date,
+.supports-time .time,
+.supports-month .mont {
+    display: none;
+}
+
+input, select {
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+    width: 400px;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-bottom: 0.5em;
+    width: auto;
+}
+
+.button {
+    background-color: #006C3A;
+    color: #ffffff;
+    width: auto;
+    box-shadow: 2px 3px 3px #b0b0b0;
+    cursor: pointer;
+    padding: 10px 40px 10px 40px;
+    display: inline-block;
+    border: none;
+    font-family: "bold";
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    background-color: #00351C;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
+}
+/*Form Styling*/ /*Source: https://css-tricks.com/form-validation-part-1-constraint-validation-html/ */
