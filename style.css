@@ -21,10 +21,13 @@
 }
 /*Fonts*/
 
+
+
 body, html{
     background-color: #F0F0F0;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 p{
     font-family: "regular";
@@ -449,8 +452,11 @@ form.submitted input:invalid{
 
 @media only screen and (min-width: 768px) {
 
+
+
 body,html{
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .container{
