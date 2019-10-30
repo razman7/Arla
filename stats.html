@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+    </script>
+
+    <title>Arlagården</title>
+  </head>
+  <body>
+  <!-- DESKTOP VERSION !-->
+  <div class="deskwrapper">
+    <div class="stickytop"></div>
+    <nav class="sidenav"> <!-- desktop menu !-->
+      <div>
+      <a href="index.html" id="home"><img src="media/logo.svg" alt="arla logo"></a>
+      <a href="index.html" id="catnav"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+      <a href="stats.html" id="statnav"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+      <a href="help.html" id="helpnav"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+      </div>
+    </nav>
+
+    <div class="deskcontent" id="finalwhiteback">
+      <h1 class="deskmaintitles" id="surveytitle">You’ve completed the form!</h1>
+
+      <img src="media/logo.svg" alt="bar graph" class="ssimgl">
+      <div id="ffinalsl">
+        <h2 class="sshead">CARBON FOOTPRINT</h2>
+        <h2 class="sshead" id="sshl">918,46/kg-CO2</h2>
+        <p>
+          Your carbon footprint has improved by 80% compared to last year.
+        </p>
+      </div>
+
+      <img src="media/logo.svg" alt="bar graph" class="ssimg">
+      <div id="ffinals">
+        <h2 class="sshead">MONEY MADE</h2>
+        <h2 class="sshead" id="sshr">10000 DKK</h2>
+        <p>
+          We know you’re not doing it for the money, but here’s a little sneak-peak on your bonus for completing the form.
+        </p>
+      </div>
+
+      <div class="contentflex">
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+            <li><a href="#tabs-2">Proin dolor</a></li>
+            <li><a href="#tabs-3">Aenean lacinia</a></li>
+          </ul>
+          <div id="tabs-1">
+
+            <h2>This is how you improved in the past years!</h2>
+            <img src="media/logo.svg" alt="footprints">
+            <div class="lines">
+              <hr class="line1"> <p class="linetitle">TIPS AND TRICKS</p> <hr class="line2">
+            </div>
+            <h2>How can you improve even more for the next years?</h2>
+            <img src="media/logo.svg" alt="footprints">
+          </div>
+
+          <div id="tabs-2">
+
+            <img src="media/logo.svg" alt="footprints">
+            <div class="lines">
+              <hr class="line1"> <p class="linetitle">TIPS AND TRICKS</p> <hr class="line2">
+            </div>
+            <h2>How can you improve even more for the next years?</h2>
+            <img src="media/logo.svg" alt="footprints">
+          </div>
+
+          <div id="tabs-3">
+            <img src="media/logo.svg" alt="footprints">
+            <div class="lines">
+              <hr class="line1"> <p class="linetitle">TIPS AND TRICKS</p> <hr class="line2">
+            </div>
+            <h2>How can you improve even more for the next years?</h2>
+            <img src="media/logo.svg" alt="footprints">
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MOBILE VERSION !-->
+  <div class="container"> <!-- mobile menu !-->
+    <div class="content">
+      <div role="navigation" id="topbar">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            <nav id="menu">
+              <a href="index.html"><img src="media/logo.svg" alt="arla logo"><p>Categories</p></a>
+              <a href="stats.html"><img src="media/logo.svg" alt="arla logo"><p>Statistics</p></a>
+              <a href="help.html"><img src="media/logo.svg" alt="arla logo"><p>Help</p></a>
+            </nav>
+          </div>
+          <div id="smallgrid">
+            <a href="index.html" class="logolink">
+              <img src="media/logo.svg" alt="arla logo" id="logo">
+            </a>
+            <div id="rightnav">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+              <img src="media/logo.svg" alt="arla logo">
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="contentscroll" >
+      <div class="contentflex" id="surveyflexmf">
+        <h2 class="maintitles">You’ve completed the form!</h2>
+        <img src="media/meme.png" alt="bar graph" class="ssimg">
+
+
+        <div class="lines">
+          <hr class="line1"> <p class="linetitle">INPUT STATS</p> <hr class="line2">
+        </div>
+
+
+
+        <img src="media/meme2.png" alt="incomplete">
+
+        <div id="onlyheresothatitscrollsnormally"></div>
+      </div>
+    </div>
+
+  </div>
+
+  </body>
+</html>
